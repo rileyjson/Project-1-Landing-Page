@@ -1,0 +1,119 @@
+
+* { /* Removed white space around header */
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.header {
+    background-color: #1F2937;
+    height: 500px;
+    width: 100%; 
+    padding: 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-text h1 {
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
+
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.header-logo {
+    color: #F9FAF8;
+    font-size: 24px;
+    font-weight: extra-bold;
+}
+
+.header-text button {
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 10px 40px;
+    border-radius: 10px;
+    color:#E5E7EB;
+    background-color: #3882F6;
+}
+
+
+.header-text p {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+
+ul {
+    color: #E5E7EB;
+    font-size: 18px;
+    list-style-type: none;
+    display: flex;
+    padding: 10px;
+    gap: 30px;
+
+}
+
+/**/
+
+
+.photo-container {
+    padding: 30px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.photo-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    gap: 10px;
+}
+
+
+.title {
+    text-align: center;
+    padding: 60px;
+}
+
+/* */
+
+.quote-container {
+    display: flex;
+    justify-content: center; /* Centering a div using flexbox*/
+    align-items: center;
+    background-color: #E5E7EB;
+    padding: 30px;
+    width: 100%;
+    height: 500px;
+}
+
+.quote-text {
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    margin: 500px;
+
+    
+} 
+
+.quote-name {
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
