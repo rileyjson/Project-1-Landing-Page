@@ -5,10 +5,9 @@
     font-family: "Roboto", sans-serif;
 }
 
-.header {
+.header-container {
     background-color: #1F2937;
-    height: 500px;
-    width: 100%; 
+    min-height: 600px;
     padding: 20px;
 }
 
@@ -21,14 +20,20 @@
     font-size: 48px;
     font-weight: extra-bold;
     color: #F9FAF8;
-
 }
 
 .header-bottom {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px; /* This makes it the same height of its parent. without this is wont center the div. */
     
-    
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap; /* text and picture wrap in header */
+    gap: 170px;
 }
 
 .header-logo {
@@ -41,9 +46,12 @@
     font-size: 16px;
     font-weight: bolder;
     padding: 10px 40px;
-    border-radius: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
     color:#E5E7EB;
     background-color: #3882F6;
+    max-width: 150px;
+    border: none;
 }
 
 
@@ -52,6 +60,12 @@
     font-size: 18px;
 }
 
+.header-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 500px;
+}
 
 ul {
     color: #E5E7EB;
@@ -63,15 +77,19 @@ ul {
 
 }
 
+.header-img img {
+    max-width: 500px;
+    border-radius: 20px;
+}
 /**/
 
 
 .photo-container {
     padding: 30px;
-    height: 400px;
+    min-height: 400px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -83,6 +101,11 @@ ul {
     gap: 10px;
 }
 
+
+.photo-item img {
+    border-radius: 20px;
+    object-fit: cover;
+}
 
 .title {
     text-align: center;
@@ -97,16 +120,15 @@ ul {
     align-items: center;
     background-color: #E5E7EB;
     padding: 30px;
-    width: 100%;
-    height: 500px;
+    min-height: 500px;
 }
 
 .quote-text {
     font-size: 36px;
     color: #1F2937;
     font-style: italic;
-    margin: 500px;
-
+    margin: 100px;
+    max-width: 800px;
     
 } 
 
@@ -114,6 +136,96 @@ ul {
     font-weight: bold;
     display: flex;
     justify-content: flex-end;
+    padding: 30px;
+}
+
+/* */
+
+.sign-up-container {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-box {
+    background-color: #3882F6;
+    color:#E5E7EB;
+    border-radius: 25px;
+    width: 1000px;
+    padding: 70px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.sign-up-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-button button {
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    padding:  10px 50px;
+    border-radius: 10px;
+}
+
+/* */
+
+.footer-container {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    font-size: 18px;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
+/* Extra */
+
+#recipes:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color:aliceblue;
+}
+
+#gallery:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color:aliceblue;
+
+}
+
+#shop:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color:aliceblue;
+
+}
+
+.header-img:hover {
+    cursor: pointer;
+    transition: transform .1s;
+    transform: scale(1.2);
+}
+
+.photo-item:hover {
+    cursor: pointer;
+    transition: transform .1s;
+    transform: scale(1.2);
+}
+
+.header-text button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.sign-up-button:hover {
+    opacity: 0.8;
+    transition: 0.2s;
+}
